@@ -1,3 +1,5 @@
 body {
     background-image: url(img/background-blk-purple-curcuit-board.png);
+    background-size: 100% auto;
+    min-height: 138vh;
 }
