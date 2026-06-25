@@ -8,7 +8,7 @@
 .header {
     color: blueviolet;
     font-family: 'Courier New', Courier, Arial, sans-serif;
-    margin-left: 32%;
+    margin-left: 34%;
 }
 .icon {
         float: left;
@@ -29,24 +29,31 @@ h1 {
 h3 {
     font-size: 20px;
     margin-top: -50px;
-    margin-right: 45%;
+    margin-right: 43%;
     float:right;
 }
 
-hr {
+#top {
     width: 95%;
     margin-left: 50px;
+    margin-bottom: 25px;
+}
+
+#bottom {
+    margin-top: 25px;
 }
 
 /* Background configuration using properties to center
     and fill the main page background */
 body {
-    
+
     background-image: url(img/background-blk-purple-curcuit-board.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+
+
 }
 
 .home-content {
@@ -85,17 +92,16 @@ figcaption {
 
 nav {
     font-size:28px;
-    /* margin-left: 57%; */
     text-align: center;
 }
 
 nav a{
-    padding: 50px;
-    color: lightgray; 
-    text-decoration: none;
+    padding: 50px;   /* Spaces out the link text. Padding targets inner-space */
+    color: lightgray; /* default color or link is blue */
+    text-decoration: none; /* removes the underline default of a hyperlink */
 }
 
-a:hover {
+a:hover { /* Changes to the link elements when hovered over */
     font-size: 35px;
     color: hotpink;
 }
@@ -107,13 +113,62 @@ a:hover {
 
 footer {
     color: grey;
-    margin-left: 35%;
-    margin-top: 20px;
+    margin-left: 25%;
+    margin-top: 40px;
 }
 
 #logo {
     height: 150px;
     width: 200px;
+    margin-top: -65px;
     float: left;
+}
+
+/* style modificaftions specific to the about me page starting with the table*/
+
+table {
+    margin: 40px auto; /* two values => [top, bottom] [left, right]  */
+    color: white;
+
+}
+#table-header {
+    background-color: black;
+}
+
+#table-row {
+    background-color: rgba(118, 90, 122, 0.5);
+}
+
+td strong {
+    color: #765a7a;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+/* Configurations to style the interests list of the about me page */
+#hobby-list {
+    width: 800px;
+    margin-left: 550px;
+    text-align: left;
+}
+
+.hobby {
+    color: #7891a3;
+}
+
+/* Modifies the text color and alignment within the table */
+#container {
+    color: lightgrey;
+    text-align: center;
+}
+
+
+/* Style changes for the contact page */
+#contact {
+    margin-left: 650px;
+    margin-top: 50px;
 }
 
