@@ -1,5 +1,98 @@
-body {
-    background-image: url(img/background-blk-purple-curcuit-board.png);
-    background-size: 100% auto;
-    min-height: 138vh;
+/*
+    Jessica Sandoval 
+    CST336 - Lab 1: ePortfolio
+    CSS Stylesheet
+*/
+
+/* Header style modifications */
+.header {
+    color: blueviolet;
+    font-family: 'Courier New', Courier, Arial, sans-serif;
+    margin-left: 32%;
 }
+
+h1 {
+    font-size: 65px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: -50px;
+    margin-right: 45%;
+    float:right;
+}
+
+hr {
+    width: 95%;
+    margin-left: 50px;
+}
+
+/* Background configuration using properties to center
+    and fill the main page background */
+body {
+    
+    background-image: url(img/background-blk-purple-curcuit-board.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img {
+    width: 500px;
+    height: 475px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 300px;
+    border-style: solid;
+    border-color: blueviolet;
+}
+
+
+.left-column {
+    width: 775px;
+    height: 450px;
+    border: inset;
+    border-color: grey;
+    margin-top: 20px;
+    margin-left: 150px;
+    color: lightgray;
+    padding: 50px;
+}
+
+figcaption {
+    color: lightgray;
+    margin-top: 40px;
+}
+
+nav {
+    font-size:28px;
+    margin-left: 57%;
+}
+
+nav a{
+    padding: 50px;
+    color: lightgray; 
+}
+
+a:hover {
+    font-size: 35px;
+}
+
+#welcome {
+    font-size: 30px;
+    padding-left: 20%;
+}
+
+footer {
+    color: grey;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+
