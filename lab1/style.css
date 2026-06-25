@@ -10,6 +10,14 @@
     font-family: 'Courier New', Courier, Arial, sans-serif;
     margin-left: 32%;
 }
+.icon {
+        float: left;
+        height: 120px;
+        width: 120px;
+        margin-top: -150px;
+        margin-left: 200px;
+        opacity: 50%;
+}
 
 h1 {
     font-size: 65px;
@@ -48,7 +56,7 @@ img {
     width: 500px;
     height: 475px;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 0px;
     border-radius: 300px;
     border-style: solid;
     border-color: blueviolet;
@@ -57,37 +65,41 @@ img {
 
 .left-column {
     width: 775px;
-    height: 450px;
+    height: 400px;
     border: inset;
     border-color: grey;
     margin-top: 20px;
     margin-left: 150px;
     color: lightgray;
     padding: 50px;
+    text-align: center;
 }
 
 figcaption {
     color: lightgray;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 nav {
     font-size:28px;
-    margin-left: 57%;
+    /* margin-left: 57%; */
+    text-align: center;
 }
 
 nav a{
     padding: 50px;
     color: lightgray; 
+    text-decoration: none;
 }
 
 a:hover {
     font-size: 35px;
+    color: hotpink;
 }
 
 #welcome {
     font-size: 30px;
-    padding-left: 20%;
+    text-align: center;
 }
 
 footer {
