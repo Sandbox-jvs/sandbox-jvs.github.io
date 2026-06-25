@@ -112,7 +112,7 @@ a:hover { /* Changes to the link elements when hovered over */
 }
 
 footer {
-    color: grey;
+    color: lightblue;
     margin-left: 25%;
     margin-top: 40px;
 }
@@ -135,7 +135,7 @@ table {
     background-color: black;
 }
 
-#table-row {
+.table-row {
     background-color: rgba(118, 90, 122, 0.5);
 }
 
