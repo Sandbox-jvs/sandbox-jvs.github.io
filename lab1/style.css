@@ -6,36 +6,36 @@
 
 /* Header style modifications */
 .header {
-    color: blueviolet;
+    color: #b49cd3;
     font-family: 'Courier New', Courier, Arial, sans-serif;
-    margin-left: 34%;
+    text-decoration: overline;
 }
 .icon {
         float: left;
         height: 120px;
         width: 120px;
         margin-top: -145px;
-        margin-left: 200px;
+        margin-left: 10%;
         opacity: 50%;
         border-radius: 300px;
         border-style: solid;
-        border-color: blueviolet;
+        border-color: #6f00ff80;
 }
 
 h1 {
     font-size: 65px;
+    text-align: center;
 }
 
 h3 {
     font-size: 20px;
+    text-align: center;
     margin-top: -50px;
-    margin-right: 43%;
-    float:right;
 }
 
 #top {
     width: 95%;
-    margin-left: 50px;
+    margin-left: 2%;
     margin-bottom: 25px;
 }
 
@@ -52,34 +52,31 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-
-
 }
 
 .home-content {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: flex; /* Sits the block elements into a default row */
+    justify-content: space-evenly;
+    align-items: center; /* centers perpendicularly from the main axis */
 }
 
 #profile-pic {
-    width: 500px;
+    width: 650px;
     height: 475px;
-    margin-left: 50px;
     margin-top: 0px;
-    border-radius: 300px;
-    border-style: solid;
-    border-color: blueviolet;
+    border-radius: 150px;
+    border-style: double;
+    border-color: #413f66;
 }
 
 
 .left-column {
-    width: 775px;
+    width: 700px;
     height: 400px;
     border: inset;
     border-color: grey;
     margin-top: 20px;
-    margin-left: 150px;
+    margin-left: 100px;
     color: lightgray;
     padding: 50px;
     text-align: center;
@@ -88,6 +85,7 @@ body {
 figcaption {
     color: lightgray;
     margin-top: 25px;
+    text-align: center;
 }
 
 nav {
@@ -101,20 +99,22 @@ nav a{
     text-decoration: none; /* removes the underline default of a hyperlink */
 }
 
+
 a:hover { /* Changes to the link elements when hovered over */
     font-size: 35px;
-    color: hotpink;
+    color: #7891a3;
 }
 
 #welcome {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 
 footer {
     color: lightblue;
-    margin-left: 25%;
     margin-top: 40px;
+    text-align: center;
+
 }
 
 #logo {
@@ -127,16 +127,16 @@ footer {
 /* style modificaftions specific to the about me page starting with the table*/
 
 table {
-    margin: 40px auto; /* two values => [top, bottom] [left, right]  */
-    color: white;
-
+ 
+    position: relative;
+    margin: 50px auto;
 }
 #table-header {
     background-color: black;
 }
 
 .table-row {
-    background-color: rgba(118, 90, 122, 0.5);
+    background-color: #765a7a80;
 }
 
 td strong {
@@ -144,22 +144,20 @@ td strong {
 }
 
 td {
-    padding-right: 10px;
     font-size: 30px;
 }
 
 /* Configurations to style the interests list of the about me page */
 #hobby-list {
-    width: 800px;
-    margin-left: 550px;
     text-align: left;
+    margin: 0px 500px;
 }
 
 .hobby {
     color: #7891a3;
 }
 
-/* Modifies the text color and alignment within the table */
+/* Modifies the text color and alignment of text within the table */
 #container {
     color: lightgrey;
     text-align: center;
@@ -168,7 +166,8 @@ td {
 
 /* Style changes for the contact page */
 #contact {
-    margin-left: 650px;
-    margin-top: 50px;
+    display: flex;    
+    margin-top: 0px;
+    justify-content: center;
 }
 
