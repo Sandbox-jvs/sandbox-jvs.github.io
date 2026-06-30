@@ -1,0 +1,33 @@
+#network {  /* Configurations for the header <header> tag */
+    border: cyan solid;
+    margin: 0px;
+    height: 500px;
+    background-image: url(../img/network-devices.jpg);
+    background-size: cover;
+}
+
+.header-text {
+    margin-right: 600px;
+    background-color: rgba(128, 128, 128, 0.5);
+    color: #ffffff;
+    text-shadow: 2px 10px 10px #000000;
+    box-shadow: 2px 2px 2px #000000;
+}
+
+#comp-header {
+    font-size: 100px;
+    margin-top: 10%;
+}
+#net-header {
+    font-size: 200px;
+}
+
+#content {
+    border: solid;
+    border-color: purple;
+}
+
+#overview {
+    border: blue solid;
+}
+
