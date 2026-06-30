@@ -1,33 +1,65 @@
 #network {  /* Configurations for the header <header> tag */
-    border: cyan solid;
+    padding-top: 150px;
     margin: 0px;
-    height: 500px;
+    height: 375px;
     background-image: url(../img/network-devices.jpg);
     background-size: cover;
 }
 
+/* ------------------Header style configurations------------------------ */
 .header-text {
     margin-right: 600px;
     background-color: rgba(128, 128, 128, 0.5);
     color: #ffffff;
     text-shadow: 2px 10px 10px #000000;
-    box-shadow: 2px 2px 2px #000000;
 }
 
 #comp-header {
     font-size: 100px;
-    margin-top: 10%;
 }
 #net-header {
     font-size: 200px;
 }
+/* ---------------------End Header Styling-------------------------------- */
+
+/* ---------------------Main content styling------------------------------ */
+
+nav, nav a {
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: #000000;
+    padding: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 30px;
+}
 
 #content {
-    border: solid;
-    border-color: purple;
+    border: purple solid; 
+}
+
+#content h1 {
+    text-shadow: 2px 2px #000000;
+    font-size: 40px;
 }
 
 #overview {
     border: blue solid;
+    margin: auto 50px;
 }
 
+footer {
+    color: #0a0a7d;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#logo {
+    float: left;
+    height:150px;
+    margin-top: -50px;
+}
+/* -----------------------End Main content Styling-------------------------- */
