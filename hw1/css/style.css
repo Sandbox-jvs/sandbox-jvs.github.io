@@ -128,12 +128,12 @@ footer {
     display: block;
 }
 
-#handshake {
+.handshake {
     height: 500px;
     width: 900px;
     margin-left: 25%;
 }
-#handshake-text, ol {
+.handshake-text, ol {
     margin-top: 50px;
     font-size: 25px;
 }
