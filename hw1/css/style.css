@@ -58,6 +58,12 @@ footer {
     height:150px;
     margin-top: -50px;
 }
+
+#sources ul {
+    width: fit-content;
+    margin: 0px auto;
+}
+
 /* -----------------------End Homepage content Styling-------------------------- */
 
 /* ------------------TCP|UDP style configurations---------------------------- */
