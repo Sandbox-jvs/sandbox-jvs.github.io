@@ -84,10 +84,10 @@ footer {
 
 /* ------------------TCP|UDP style configurations---------------------------- */
 #transport-head {
-    height: 500px;
+    height: 600px;
     background-image: url(../img/tcp-vs-udp.jpg);
     background-size: cover;
-    background-position: center top;
+    background-position: 100% 20%;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 5px #000000;
 }
@@ -120,15 +120,22 @@ footer {
 
 .protocol-text {
     margin-bottom: 100px;
+    margin-top: -20px;
+    font-size: 25px;
+}
+
+.protocol-name {
+    display: block;
 }
 
 #handshake {
     height: 500px;
     width: 900px;
-    margin-left: 200px;
+    margin-left: 25%;
 }
-#handshake-text {
+#handshake-text, ol {
     margin-top: 50px;
+    font-size: 25px;
 }
 /* ------------------End TCP|UDP style configurations------------------------ */
 

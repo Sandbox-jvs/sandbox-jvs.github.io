@@ -25,39 +25,60 @@
             <h1 id="udp">UDP</h1>
             <figure><img class="content-img" src="img/Title-udp.webp" alt="udp"/></figure>
             <p class="protocol-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio fuga vero consequuntur.
-                Adipisci accusamus facilis reprehenderit vel accusantium consectetur a commodi? Voluptas atque vel 
-                tempore! Sed accusamus eligendi est?
+                <strong class="protocol-name">User Datagram Protocol</strong>
+                This is a lightweight transport protocol that prioritizes speed over reliability as data packets can be 
+                lost, duplicated, or arrive out of order during transmission. UDP does not retransmit lost packets or guarantee 
+                packet delivery. This protocol is commonly used for streaming and online gaming purposes. When we say that this 
+                protocol is connectionless, we mean that no handshake between the devices occur, as further discussed below.
             </p>
 
             <h1 id="tcp">TCP</h1>
 
             <figure><img class="content-img" src="img/tcp.webp" alt="tcp"/></figure>
             <p class="protocol-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio fuga vero consequuntur.
-                Adipisci accusamus facilis reprehenderit vel accusantium consectetur a commodi? Voluptas atque vel 
-                tempore! Sed accusamus eligendi est?
+                <strong class="protocol-name">Transmission Control Protocol</strong>
+                TCP is best used when accurate and dependable transmission of data is required. Unlike UDP, TCP is a connection-oriented 
+                protocol in that it does go through the handshake process between communicating devices and hosts. However, it also requires
+                more overhead, meaning that it requires more work and data to make communication happen. Although TCP is slower than UDP due
+                to its overhead, it ensures data delivery through acknowledgments and retransmissions. 
             </p>
         </div>
+        </main>
         <hr>
         <article>
             <div>
                 <p id="handshake-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nulla neque itaque hic ad animi cumque 
-                    explicabo quod, nisi optio facilis. Odit laborum officiis dolore sequi maiores expedita porro quibusdam.
+                   A <strong>handshake</strong> is the process by which two devices establish a connection and agree to communicate before data transmission can 
+                begin. It is a three-step process in whcih the source device (your computer, for example) makes a request for a connection, the 
+                destination device acknowledges the request, and finally, the source device confirms the acknowledgment. Acknowledgements are 
+                messages sent by the receiving device responding to confirm that data or connection requests were successfully received. For instance, 
+                suppose a user wants to enter an online chat room. Once the chat application asks TCP to establish a connection: 
+                    <ol>
+                        <li>TCP sends a connection request to the destination host, typically a server</li>
+                        <li>The server sends an acknowledement that the request has been received</li>
+                        <li>The source device confirms the the acknowledement, completing the connection so that data transmission can begin</li>
+                    </ol>
+                    <p id="handshake-text">A server is just a host -- a computer or device connected to the network -- that runs software designed to provide services to other 
+                    devices (in this case, a computer that has the chat server software)</p>
                 </p>
                 <figure>
                     <img id="handshake" src="img/udp-vs-tcp.jpg" alt="tcp handshake">
                 </figure>
             </div>
-        </article>
-
-                
-    </main>
+        </article>   
 
     <hr>
-
-   
+    
+    <section id="sources">
+        <h2>Sources</h2>
+        <ul>
+            <li>
+                <a href="https://www.geeksforgeeks.org/computer-networks/differences-between-tcp-and-udp/"
+                   target="_blank">Geeks-for-Geeks: UDP vs TCP</a>
+            </li>
+            <li>CST311: Computer Networks Course Lecture Slides</li>
+        </ul>
+    </section>
 
      <footer>
         <figure><img id="logo" src="img/csumb_logo.png" alt="CSUMB"></figure>
