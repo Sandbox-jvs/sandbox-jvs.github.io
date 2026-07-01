@@ -36,9 +36,6 @@ a:hover {
 }
 
 /* Main/body styling */
-#content {
-    border: purple solid; 
-}
 
 #content h1 {
     text-shadow: 2px 2px #000000;
@@ -46,7 +43,6 @@ a:hover {
 }
 
 #overview {
-    border: blue solid;
     margin: auto 50px;
 }
 
@@ -96,8 +92,21 @@ footer {
     padding-left: 150px;
 }
 
+#tcp {
+    clear: both;
+}
+
 .protocol-text {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+#handshake {
+    height: 500px;
+    width: 900px;
+    margin-left: 200px;
+}
+#handshake-text {
+    margin-top: 50px;
 }
 /* ------------------End TCP|UDP style configurations------------------------ */
 
@@ -108,19 +117,18 @@ footer {
     font-size: 40px;
     margin-bottom: -50px;
     text-shadow: 5px 5px#7b7b7b;
-    text-decoration: dotted;
 }
 
 #compare {
     display: flex;
     justify-content: center;
     height: 300px;
-    background-image: ;
 }
 
-h2 {
+h2, #r-and-f {
     text-align: center;
 }
+
 .container {
     border: #676767 outset;
     padding: 20px;
@@ -136,4 +144,49 @@ h2 {
 
 /* ------------------Router Structure style configurations------------------------ */
 
+#page-bg {
+    background-color: #6f6f8e;
+}
+
+#router-header {
+    border: #000000 solid;
+    height: 200px;
+    background-image: url(../img/router.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#header-text {
+    background-color: rgba(103, 103, 103, 0.5);
+    font-size: 50px;
+    text-shadow: 5px 5px 5px #000000;
+    margin-right: 50%;
+    margin-top: 100px;
+    color: #a98453;
+}
+#router {
+    background-color: rgba(175, 175, 175, 0.3);
+    border: #000000 solid;
+    margin: auto 50px;
+}
+
+table {
+    margin: 50px auto;
+    color: #ffffff;
+}
+
+.table-header {
+    background-color: #000000;
+    font-size: 30px;
+}
+
+.data {
+    background-color: #2c2c61;
+    font-size: 20px;
+}
+
+td {
+    padding: 10px;
+}
 /* ------------------End Router Structure style configurations------------------------ */
