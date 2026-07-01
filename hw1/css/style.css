@@ -137,6 +137,10 @@ footer {
     margin-top: 50px;
     font-size: 25px;
 }
+
+#article-head {
+    color: #000000;
+}
 /* ------------------End TCP|UDP style configurations------------------------ */
 
 /* ------------------Routing and Forwarding style configurations------------------------ */
