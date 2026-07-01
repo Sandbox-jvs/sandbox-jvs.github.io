@@ -177,6 +177,11 @@ h2, #r-and-f {
     background-color: #6f6f8e;
 }
 
+#inside-router-img {
+    display: block;
+    margin: 0px auto;
+}
+
 #router-header {
     border: #000000 solid;
     height: 200px;

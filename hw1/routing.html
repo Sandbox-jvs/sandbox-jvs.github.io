@@ -28,17 +28,29 @@
         <div id="r" class="container">
             <h2>Routing</h2>
             <ul>
-                <li>The actual moving of data froom source to destination </li>
-                <li>Traverses through the physical hardware</li>
+                <li>Determines the path data is moved between networks </li>
+                <li>Uses routing algorithms to determine the best path</li>
+                <li>Occurs in routers throughout the network</li>
+                <li>Is a Control Plane function</li>
+                <li>Occurs in the Network Layer</li>
+                <li>Routes statically by using manually configured routes</li>
+                <li>Routes dynamically using protocols - RIP, OSPF, BGP</li>
+                <li>Determines the entire end-to-end path before forwarding can occur</li>
+                <li>Anaglogy: Maps out the highways needed to reach a destination (Home -> Universal Studios)</li>
             </ul>
         </div>
 
         <div id="f" class="container">
             <h2>Forwarding</h2>
             <ul>
-                <li>Routing is the process that assigns the direction data should take</li>
-                <li>Uses routing algorithms</li>
-                <li> </li>
+                <li>The actual moving of the data packets from an input port to an output port</li>
+                <li>Is a local, per-router function</li>
+                <li>Is a Data Plane function</li>
+                <li>Occurs in the Network Layer</li>
+                <li>Uses forwarding tables mapped by routing</li>
+                <li>Uses longest prefix matching</li>
+                <li>Uses packet header information to determine the output port</li>
+                <li>Analogy: Making the actual turns following the highway mapped by the GPS (router)</li>
             </ul>
         </div>
 
@@ -49,8 +61,8 @@
         <h2>Sources</h2>
         <ul>
             <li>
-                <a href="https://www.geeksforgeeks.org/computer-networks/basics-computer-networking/"
-                   target="_blank">Geeks-for-Geeks: Computer Networking Basics</a>
+                <a href="https://www.baeldung.com/cs/routing-vs-forwarding-vs-switching"
+                   target="_blank">Baeldung: Routing vs Forwarding vs Switching</a>
             </li>
             <li>CST311: Computer Networks Course Lecture Slides</li>
         </ul>

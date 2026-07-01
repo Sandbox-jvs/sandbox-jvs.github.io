@@ -21,30 +21,43 @@
     </nav>
 
     <main id="router">
+        <figure><img id="inside-router-img" src="img/router-structure.png" alt="architecture"></figure>
         <table>
             <tr class="table-header">
-                <td><strong>Input Port</strong></td>
                 <td><strong>Routing processor</strong></td>
+                <td><strong>Input Port</strong></td>
                 <td><strong>Switch fabric</strong></td>
                 <td><strong>output port</strong></td>
             </tr>
             <tr class="data">
-                <td>lorem</td>
-                <td>lorem</td>
-                <td>lorem</td>
-                <td>lorem</td>
+                <td>Determines the best path through the network</td>
+                <td>Entry point for incoming data packets</td>
+                <td>Moves data from input port to reach output port</td>
+                <td>Exit point of the router</td>
             </tr>
               <tr class="data">
-                <td>lorem</td>
-                <td>lorem</td>
-                <td>lorem</td>
-                <td>lorem</td>
+                <td>Uses Protocols such as OSPF, RIP, and BGP</td>
+                <td>Performs queuing delay when datagram entry is than the rate of the switch fabic</td>
+                <td>Does not do any routing</td>
+                <td>Buffering occurs if traffic through output port exceeds transmission rate</td>
             </tr>
               <tr class="data">
-                <td>lorem</td>
-                <td>lorem</td>
-                <td>lorem</td>
-                <td>lorem</td>
+                <td>The protocols employ routing algorithms - Belmann-Ford (RIP), Dijkstra, and Path Vector (BGP)</td>
+                <td>Data passes through the physical layer and receives signals at bit-level</td>
+                <td>Three Types of Switching Fabric architectures: Memory, Bus, Interconnection Network</td>
+                <td>Packet Scheduling occurs if buffer is full such as FIFO, Priority, Round-Robin, and Weighted fair queuing </td>
+            </tr>
+                <tr class="data">
+                <td>Stores the Routing results in a Routing Table</td>
+                <td>Continues to the link layer that confirms datagram has a valid Ethernet Frame</td>
+                <td>Similar to a highway that vehicles transport through to their exits</td>
+                <td>the extracted IP address is re-encapsulated in a new Ethernet Frame</td>
+            </tr>
+                <tr class="data">
+                <td>Routing table creates a forwarding table for routers to reference when determining destination output ports</td>
+                <td>The Network Layer processes the Ethernet frame to examine and extract the destination IP Address</td>
+                <td></td>
+                <td>The data is converted back to a physical signal and sent out to the next network link</td>
             </tr>
             
         </table>
@@ -55,8 +68,8 @@
         <h2>Sources</h2>
         <ul>
             <li>
-                <a href="https://www.geeksforgeeks.org/computer-networks/basics-computer-networking/"
-                   target="_blank">Geeks-for-Geeks: Computer Networking Basics</a>
+                <a href="https://www.geeksforgeeks.org/computer-networks/introduction-of-a-router/"
+                   target="_blank">Geeks-for-Geeks: Intro to a router</a>
             </li>
             <li>CST311: Computer Networks Course Lecture Slides</li>
         </ul>
