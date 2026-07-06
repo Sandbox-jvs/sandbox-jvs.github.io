@@ -1,0 +1,64 @@
+/* 
+Jessica Sandoval
+CST336 - Lab 2: Guess the Number 
+07/05/2026
+*/
+
+header {
+    color: #fff;
+    text-shadow: 5px 5px #000;
+    text-align: center;
+    font-size: 40px;
+}
+
+body {
+    background-image: url(../img/glow-numbers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main {
+    border: solid #000;
+    background-color: rgba(205, 233, 233, 0.5);
+    height: 400px;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 4px 4px 2px #000; 
+    padding-top: 40px;   
+    text-align: center;
+}
+
+#feedback {
+    border: solid #000;
+    background-color: rgba(0, 179, 255, 0.8);
+    height: 50px;
+    margin-top: 10px;
+    text-shadow: 2px 2px #000;
+}
+
+#playerGuess {
+    font-size: 20px;
+}
+
+#guessBtn {
+    background-color: #000790;
+    border: solid #000;
+    color: #fff;
+    font-size: 20px;
+}
+footer {
+    text-align: center;
+    color: #97f3ff;
+    background-color: #000;
+    height: 60px;
+    padding-top: 5px;
+    margin-top: 20px;
+    border: solid #00ffff;
+}
+
+#logo {
+    float: left;
+    height: 150px;
+    width: 200px;
+    margin-top: -60px;
+}
