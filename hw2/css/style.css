@@ -8,8 +8,19 @@ body {
 #question-board {
     background-color: rgba(255, 255, 255, 0.5);
     height: auto;
+    font-family:Arial, Helvetica, sans-serif
 }
 
 h1 {
     font-size: 80px;
+}
+
+#logo {
+    height: 150px;
+    float: left;
+    margin-top: -65px;
+}
+footer {
+    color: #fff;
+    margin-top: 50px;
 }
