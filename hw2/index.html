@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="text-center">
-
-        <h1 class="p-5 bg-light">US Geography Quiz</h1>
+    <header>
+        <h1 class="p-5 bg-light fw-bold">US Geography Quiz</h1>
+    </header>
     <main id="question-board">
 
-        <h3><span id="markImg1"></span>What is the capital of California?</h3>
+        <h3 class="fw-bold"><span id="markImg1"></span>What is the capital of California?</h3>
         <input type="text" id="q1">
         <br><br>
         <div id="q1Feedback"></div>
         <br><br>
 
-        <h3><span id="markImg2"></span>What is the longest river?</h3>
+        <h3 class="fw-bold"><span id="markImg2"></span>What is the longest river?</h3>
         <select id="q2">
             <option value="">Select one</option>
             <option value="ms">Mississippi</option>
@@ -32,7 +33,7 @@
         <br><br>
         
         <!-- Checkboxes can have more than one response selected  -->
-        <h3><span id="markImg3"></span>What presidents are carved into Mount Rushmore?</h3>
+        <h3 class="fw-bold"><span id="markImg3"></span>What presidents are carved into Mount Rushmore?</h3>
         <input type="checkbox" id="Jackson"> <label for="Jackson">A. Jackson</label>
         <input type="checkbox" id="Franklin"> <label for="Franklin">B. Franklin</label>
         <input type="checkbox" id="Jefferson"> <label for="Jefferson">T. Jefferson</label>
@@ -42,13 +43,13 @@
         <br><br>
 
         <!-- Can randomize the choices for the checkmark and radio questions instead of hardcoding -->
-        <h3><span id="markImg4"></span>What is the smallest US State?</h3>
+        <h3 class="fw-bold"><span id="markImg4"></span>What is the smallest US State?</h3>
         <div id="q4Choices"></div>
         <br><br>
         <div id="q4Feedback"></div>
         
         <!-- Circular Multiple choice radio buttons can only have one response -->
-        <h3><span id="markImg5"></span>What is the largest lake entirely within the US?</h3>
+        <h3 class="fw-bold"><span id="markImg5"></span>What is the largest lake entirely within the US?</h3>
         <input type="radio" name="q5" id="lm" value="Lake Michigan"> <label for="lm">Lake Michigan</label>
         <input type="radio" name="q5" id="lo" value="Lake Ontario"> <label for="lo">Lake Ontario</label>
         <input type="radio" name="q5" id="rl" value="Red Lake"> <label for="rl">Red Lake</label>
@@ -57,7 +58,7 @@
         <div id="q5Feedback"></div>
         
         <!-- Questions 6 input response  -->
-        <h3><span id="markImg6"></span>What is the capital of Texas?</h3>
+        <h3 class="fw-bold"><span id="markImg6"></span>What is the capital of Texas?</h3>
         <input type="text" id="q6">
         <br><br>
         <div id="q6Feedback"></div>
@@ -65,31 +66,35 @@
         
 
         <!-- Questions 7 multiple choice -->
-        <h3><span id="markImg7"></span>What is the official state flower of Hawaii?</h3>
+        <h3 class="fw-bold"><span id="markImg7"></span>What is the official state flower of Hawaii?</h3>
         <div id="q7Choices"></div>
         <br><br>
         <div id="q7Feedback"></div>
+        <br><br>
 
         <!-- Questions 8 multiple choice -->
-        <h3><span id="markImg8"></span>In what state is the Statue of Liberty located?</h3>
+        <h3 class="fw-bold"><span id="markImg8"></span>In what state is the Statue of Liberty located?</h3>
         <div id="q8Choices"></div>
         <br><br>
         <div id="q8Feedback"></div>
+        <br><br>
 
         <!-- Questions 9 multiple choice -->
-        <h3><span id="markImg9"></span>What river flows through the Grand Canyon?</h3>
+        <h3 class="fw-bold"><span id="markImg9"></span>What river flows through the Grand Canyon?</h3>
         <div id="q9Choices"></div>
         <br><br>
         <div id="q9Feedback"></div>
+        <br><br>
 
         <!-- Questions 10 multiple choice -->
-        <h3><span id="markImg10"></span>Which state is known as the "Sunflower State"?</h3>
+        <h3 class="fw-bold"><span id="markImg10"></span>Which state is known as the "Sunflower State"?</h3>
         <div id="q10Choices"></div>
         <br><br>
         <div id="q10Feedback"></div>
+        <br><br>
 
         <h3 id="validationFdbk" class="bg-danger text-white"></h3>
-        <button class="btn  btn-dark">Submit Quiz</button>
+        <button class="btn  btn-dark p-4 fs-4 fw-bold">Submit Quiz</button>
         <h2 id="totalScore" class="text-info"></h2>
     
 
