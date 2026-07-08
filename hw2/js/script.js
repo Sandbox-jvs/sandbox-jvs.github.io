@@ -96,42 +96,42 @@ function gradeQuiz() {
     }
 
     //Condition to check the response for question 5
-    if (selectedQ5 !== null && selectedQ5.value === "Aug. 2, 1776") {
+    if (selectedQ5 !== null && selectedQ5.value === "Lake Michigan") {
         rightAnswer(5);
     } else {
         wrongAnswer(5);
     }
 
     //Condition to check the response for question 6
-    if (q6Response === "atlanta") {
+    if (q6Response === "austin") {
         rightAnswer(6);
     } else {
         wrongAnswer(6);
     }
 
     //Condition to check the response for question 7
-     if (selectedQ7 !== null && selectedQ7.value === "1982") {
+     if (selectedQ7 !== null && selectedQ7.value === "Hibiscus") {
         rightAnswer(7);
     } else {
         wrongAnswer(7);
     }
 
     //Condition to check the response for question 8
-     if (selectedQ8 !== null && selectedQ8.value === "Women") {
+     if (selectedQ8 !== null && selectedQ8.value === "New York") {
         rightAnswer(8);
     } else {
         wrongAnswer(8);
     }
     
     //Condition to check the response for question 9
-     if (selectedQ9 !== null && selectedQ9.value === "Madam C.J. Walker") {
+     if (selectedQ9 !== null && selectedQ9.value === "Colorodo River") {
         rightAnswer(9);
     } else {
         wrongAnswer(9);
     }
     
     //Condition to check the response for question 10
-     if (selectedQ10 !== null && selectedQ10.value === "The 13 original colonies") {
+     if (selectedQ10 !== null && selectedQ10.value === "Kansas") {
         rightAnswer(10);
     } else {
         wrongAnswer(10);
@@ -187,7 +187,7 @@ function displayQ4Choices() {
 }
 
 function displayQ7Choices() {
-    let q7ChoicesArray = ["1986", "1900", "1982", "1999"];
+    let q7ChoicesArray = ["Hibiscus", "Plumeria", "Bird of Paradise", "Anthurium"];
     shuffleArray(q7ChoicesArray);
 
     let choicesContainer = document.querySelector("#q7Choices");
@@ -211,7 +211,7 @@ function displayQ7Choices() {
 }
 
 function displayQ8Choices() {
-    let q8ChoicesArray = ["Men", "Women", "Children", "Elderly"];
+    let q8ChoicesArray = ["Chicago", "Boston", "New York", "New jersey"];
     shuffleArray(q8ChoicesArray);
 
     let choicesContainer = document.querySelector("#q8Choices");
@@ -235,7 +235,7 @@ function displayQ8Choices() {
 }
 
 function displayQ9Choices() {
-    let q9ChoicesArray = ["Jessica Walker", "Madam C.J. Walker", "Rosa Parks", "Mary J. Blige"];
+    let q9ChoicesArray = ["Colorodo River", "Mississippi River", "Columbia River", "Arkansas River"];
     shuffleArray(q9ChoicesArray);
 
     let choicesContainer = document.querySelector("#q9Choices");
@@ -259,7 +259,7 @@ function displayQ9Choices() {
 }
 
 function displayQ10Choices() {
-    let q10ChoicesArray = ["13 states", "Founding Fathers", "The 13 original colonies", "The first 13 millionaires"];
+    let q10ChoicesArray = ["Kansas", "Arkansas", "Alabama", "Maine"];
     shuffleArray(q10ChoicesArray);
 
     let choicesContainer = document.querySelector("#q10Choices");
