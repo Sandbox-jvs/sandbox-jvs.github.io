@@ -1,14 +1,28 @@
-//TODO: Add password validation to check if password is at least 6 chars or the password confirmation is mismatched
-//TODO: Upon clicking on a password test box, a suggestion password is displayed next to it
-//TODO: THe list of countries is updated properly when selecting a state
-//TODO:Bootstrap or 20 CSS 
-
 document.addEventListener("DOMContentLoaded", loadStates);
+// document.addEventListener("DOMContentLoaded", loadCounties);
+
 
 //Event listeners
 document.querySelector("#zip").addEventListener("change", displayCity);
 document.querySelector("#username").addEventListener("change", checkUsername); 
 document.querySelector("#signupForm").addEventListener("submit", validateForm);
+document.querySelector("#password").addEventListener("click", checkPassword);
+document.querySelector("#passwordAgain").addEventListener("change", checkPassword);
+// document.querySelector("#county").addEventListener("click", loadCounties);
+document.querySelector("#state").addEventListener("change", loadCounties);
+
+
+//Whether before or after the event listeners, since the functions are called later, the
+//following placeholder displays a semi-transparent text when the document loads
+let password = document.querySelector("#password");
+password.placeholder = "Enter a password";
+
+let confirmPassword = document.querySelector("#passwordAgain");
+confirmPassword.placeholder = "Confirm Password";
+
+let username = document.querySelector("#username");
+username.placeholder = "Enter username";
+
 
 async function checkUsername() {
     let username = document.querySelector("#username").value; //Stores the username
@@ -27,12 +41,31 @@ async function checkUsername() {
     if (data.available) {
         usernameError.textContent = "Username available!";
         usernameError.style.color = "green";
+        usernameError.style.display = "block";
         return true;
     } else {
         usernameError.textContent = "Username taken";
         usernameError.style.color = "red";
+        usernameError.style.display = "block";
         return false;
     }
+}
+
+async function checkPassword () {
+
+    let password = document.querySelector("#password").value;
+    let confirmPassword = document.querySelector("#passwordAgain").value;
+    let passwordError = document.querySelector("#passwordError");
+
+    let url = `https://csumb.space/api/suggestedPassword.php?length=6`
+    let response = await fetch(url);
+    let data = await response.json();
+    
+    if (password.length === 0) {
+        passwordError.textContent = "Ex: " + data.password;
+        passwordError.style.color = "blue";
+    }
+
 }
 
 async function validateForm() {
@@ -44,6 +77,12 @@ async function validateForm() {
     let username = document.querySelector("#username").value;
     let usernameError = document.querySelector("#usernameError");
 
+    let password = document.querySelector("#password").value;
+    let confirmPassword = document.querySelector("#passwordAgain").value;
+    let passwordError = document.querySelector("#passwordError");
+    let confirmPasswordError = document.querySelector("#confirmPasswordError");
+
+
     usernameError.textContent = "";
 
     //Check that user entered something into username input 
@@ -51,6 +90,18 @@ async function validateForm() {
         usernameError.textContent = "Username required";
         usernameError.style.color = "red";
         isValid = false; 
+    } else if (password.length < 6) {
+        passwordError.textContent = "Password must be at least six characters";
+        passwordError.style.color = "red";
+        isValid = false;  
+    } else if (confirmPassword.length === 0) {
+        confirmPasswordError.textContent = "Please confirm your password";
+        confirmPasswordError.style.color = "red";
+        isValid = false;  
+    } else if (confirmPassword !== password) {
+        confirmPasswordError.textContent = "Password doesn't match. Try again.";
+        confirmPasswordError.style.color = "red";
+        isValid = false;  
     } else {
         let usernameAvailable = await checkUsername(); 
 
@@ -86,6 +137,11 @@ async function displayCity() {
         document.querySelector("#city").textContent = data.city;
         document.querySelector("#latitude").textContent = data.latitude;
         document.querySelector("#longitude").textContent = data.latitude;
+
+        document.querySelector("#city").style.color = "purple";
+        document.querySelector("#latitude").style.color = "blue";
+        document.querySelector("#longitude").style.color = "orange";
+
 
     } catch (error) {
         document.querySelector("#city").textContent = "Unable to retrieve city";
@@ -125,5 +181,44 @@ async function loadStates() {
         errorOption.value = ""; 
         errorOption.textContent = "Unable to load states";
         stateMenu.appendChild(errorOption);
+    }
+    
+}
+
+async function loadCounties() {
+
+    //Setup: Grab and reset the county menu
+    let countyMenu = document.querySelector("#county");
+    countyMenu.textContent = "";
+    
+    //Create a default option element
+    let defaultOption = document.createElement("option");
+    defaultOption.value = "";
+    defaultOption.textContent = "Select One";
+    countyMenu.appendChild(defaultOption);
+    
+    //Grab the user selected abbreviated state
+    let selectedState = document.querySelector("#state").value;
+
+    try {
+        let url = `https://csumb.space/api/countyListAPI.php?state=${selectedState}`;
+        let response = await fetch(url);
+        let data = await response.json();
+
+        for (let item of data) {
+            let option = document.createElement("option");
+            option.value = item.county;
+            option.textContent = item.county;
+            countyMenu.appendChild(option);
+        }
+
+    } catch (error) {
+        console.log(error);
+        
+        countyMenu.textContent = "";
+
+        let errorOption = document.createElement("option");
+        errorOption.value = "";
+        errorOption.textContent = "Unable to load County";
     }
 }

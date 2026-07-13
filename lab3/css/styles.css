@@ -1,0 +1,42 @@
+#submitBtn {
+    border: 2px solid #000;
+}
+#state-label {
+    display: block;
+}
+
+#form-base {
+    width: 800px;
+    border-right: solid #000;
+    border-left: solid #000;
+}
+
+#form-bg {
+    background-color: #b5b5b5;
+}
+
+#county-label {
+    display: block;
+}
+
+#welcome-bg {
+    background-color: #5f9ea0;
+}
+
+#msg {
+    color: #fff;
+    padding: 50px;
+}
+
+#congrats {
+    display: block;
+    border: solid #000;
+    height: 300px;
+    padding-top: 60px;
+    font-size: 100px;
+    font-family: fantasy;
+    background-image: url(../img/confetti.jpg);
+    background-size: cover;
+    color: #ffffff;
+    text-shadow: 2px 2px #000;
+}
