@@ -1,0 +1,112 @@
+#pokemonSprite {
+    display: none;
+    background-color: #fff;
+    border: solid #000;
+    width: 460px;
+    height: 300px;
+    margin-top: 10px;
+    /* Improve blur of API sprite */
+    image-rendering: pixelated; 
+}
+
+#pageTop {
+    border: solid #000;
+    text-align: center;
+    height: 200px;
+    font-size: 100px;
+    padding-top: 30px;
+    color: #fff;
+    text-shadow: 3px 3px #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #6969e5;
+}
+
+#heading {
+    color: #ffff00;
+    font-size: 100px;
+    font-family: "Luckiest Guy", cursive;
+    text-shadow: 4px 4px 4px #000;
+}
+
+#pokemon {
+    display: block;
+}
+
+#card {
+    background-color: #808080;
+    border: 10px solid #000;
+    width: 500px;
+    height: 600px;
+}
+
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#info {
+    display: none;
+    border: solid #000;
+    width: 420px;
+    margin: 30px auto;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+#inputBox {
+    /* border: solid #000; */
+    width: 900px;
+    margin: auto auto;
+    padding-left: 200px;
+}
+
+#tempImg {
+    border: solid #000;
+    height: 500px;
+    width: 460px;
+    margin-top: 10px;
+}
+
+
+body {
+    background-image: url(../img/backgroundjpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Fixes extra white space at the bottom of the page of background img when window is altered */
+    min-height: 100vh; 
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+}
+#logo {
+    margin-top: -10px;
+    margin-left: 40%;
+    height: 150px;
+    width: 200px;
+}
+
+#footerText {
+    margin-top: 50px;
+    margin-right: 40%;
+}
+
+#container {
+    border: solid #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80%;
+    padding: 100px;
+    margin-left: 10%;
+}
+h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
